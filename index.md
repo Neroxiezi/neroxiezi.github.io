@@ -37,7 +37,7 @@ layout: default
 		  <div class="panel-body">
 		    <div class="list-group">
 			  <a href="#" class="list-group-item disabled">
-			    Cras justo odio
+			     首页
 			  </a>
 			  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
 			  <a href="#" class="list-group-item">Morbi leo risus</a>
@@ -49,5 +49,3 @@ layout: default
 		</div>
 	</div>
 </div>
-
-
