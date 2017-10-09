@@ -25,8 +25,15 @@ layout: default
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
-  <div class="panel-body">
-    Panel content
+  <div class="panel-body" id="img_content">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="..." alt="...">
+        </a>
+      </div>
+      ...
+    </div>
   </div>
 </div>
 <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
@@ -35,3 +42,15 @@ layout: default
         <i class="am-gotop-icon am-icon-chevron-up"></i>
   </a>
 </div>
+<script type="text/javascript">
+var img_content = new Vue({
+  el: "img_content",
+  data: {
+    todos: [
+      { text: '学习 JavaScript' },
+      { text: '学习 Vue' },
+      { text: '整个牛项目' }
+    ]
+  }
+})
+</script>
