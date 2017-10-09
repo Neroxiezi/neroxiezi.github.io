@@ -25,14 +25,13 @@ layout: default
   <div class="panel-heading">
     <h3 class="panel-title">Panel title</h3>
   </div>
-  <div class="panel-body" id="img_content">
-    <div class="row">
-      <div class="col-xs-6 col-md-3">
+  <div class="panel-body">
+    <div class="row" id="img_content">
+      <div class="col-xs-6 col-md-4" v-for="item in items">
         <a href="#" class="thumbnail">
           <img src="..." alt="...">
         </a>
       </div>
-      ...
     </div>
   </div>
 </div>
@@ -44,12 +43,11 @@ layout: default
 </div>
 <script type="text/javascript">
 var img_content = new Vue({
-  el: "img_content",
+  el: "#img_content",
   data: {
-    todos: [
-      { text: '学习 JavaScript' },
-      { text: '学习 Vue' },
-      { text: '整个牛项目' }
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
     ]
   }
 })
