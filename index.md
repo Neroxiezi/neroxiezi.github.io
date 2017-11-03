@@ -1,5 +1,6 @@
 ---
- layout: default
+layout: default
+title: Home
 ---
 <div class="jumbotron" style="padding-left:50px;    position: relative;">
   <h1 style="float:left;font-size:80px;width:100%;text-align:left;">Hello, world!</h1>
