@@ -36,16 +36,11 @@ layout: default
 		<div class="panel panel-default">
 		  <div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 分类列表</div>
 		  <div class="panel-body">
-		    <div class="list-group" style="text-align: left;">
+		    <div class="list-group">
 			  <a href="#" class="list-group-item disabled">
 			     首页
 			  </a>
-			  <li class="list-group-item">
-			    <a href="##" class="am-icon-btn am-icon-github"></a> 
-			    <a href="##" class="am-icon-btn  am-icon-qq"></a>
-			    <a href="##" class="am-icon-btn am-icon-twitter"></a>
-                <a href="##" class="am-icon-btn am-icon-facebook"></a>
-			  </li>
+			  <a class="list-group-item"><sapn class="am-icon-btn am-icon-github"></sapn> &nbsp;github</a>
 			  <a href="#" class="list-group-item">Morbi leo risus</a>
 			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
 			  <a href="#" class="list-group-item">Vestibulum at eros</a>
