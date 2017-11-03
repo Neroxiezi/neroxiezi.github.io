@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="jumbotron" style="padding-left:50px;">
+<div class="jumbotron" style="padding-left:50px;position: relative;">
   <h1 style="float:left;font-size:80px;width:100%;text-align:left;">Hello, world!</h1>
   <p style="float:left;">一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
 </div>
