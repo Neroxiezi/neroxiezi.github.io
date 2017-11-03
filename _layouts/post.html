@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="container" style="position: relative;">
 	<br>
 	<div class="panel panel-default">
-		<div class="panel-heading" style="padding:15px;position: relative;">
+		<div class="panel-heading" style="padding:15px;">
 			<h1 class="panel-title" style="font-size:30px;color:#000">{{page.title}}</h1>
 			<p>{% if page.author %}作者：{{page.author}}{% endif %} {% if page.author %}来源：<a href="{{page.from.link}}">{{page.from.name}}</a>{% endif %} 时间：{{page.date| date:"%Y-%m-%d %H:%M"}} {% if page.read_count %}阅读：{{page.read_count}}{% endif %}</p>
 		</div>
