@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="jumbotron" style="padding-left:50px;position: relative;">
   <h1 style="float:left;font-size:80px;width:100%;text-align:left;">Hello, world!</h1>
-  <p style="float:left">一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
+  <p style="float:left;">一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
 </div>
 <div class="container">
 	<div class="row">
@@ -39,11 +39,6 @@ layout: default
 			  <a href="#" class="list-group-item disabled">
 			     首页
 			  </a>
-			  <li  class="list-group-item">
-			          <a href="##" class="am-icon-btn am-icon-github"></a>
-				  <a href="##" class="am-icon-btn am-icon-twitter"></a>
-				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
-			  </li>
 			  <a href="#" class="list-group-item">Morbi leo risus</a>
 			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
 			  <a href="#" class="list-group-item">Vestibulum at eros</a>
