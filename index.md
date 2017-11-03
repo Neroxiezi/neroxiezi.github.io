@@ -17,9 +17,9 @@ layout: default
 						  <div class="am-list-news-bd">
 							  <ul class="am-list">
 							      {% for post in site.posts %}
-								      <li class="am-g am-list-item-desced">
+								      <li class="am-g am-list-item-desced" style="text-align: left;">
 								          <a href="{{ post.url }}" class="am-list-item-hd "><h2>{{ post.title }}</h2></a>
-								          <div class="am-list-item-text">
+								          <div class="am-list-item-text" style="text-index:4em;">
 								          	{{post.desc}}
 								          </div>
 								          <br>
@@ -36,11 +36,11 @@ layout: default
 		<div class="panel panel-default">
 		  <div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 分类列表</div>
 		  <div class="panel-body">
-		    <div class="list-group">
+		    <div class="list-group" style="    text-align: left;">
 			  <a href="#" class="list-group-item disabled">
 			     首页
 			  </a>
-			  <a class="list-group-item"><a href="##" class="am-icon-btn am-icon-github"></a> &nbsp;github</a>
+			  <a class="list-group-item"><span class="am-icon-btn am-icon-github"></span> &nbsp;github</a>
 			  <a href="#" class="list-group-item">Morbi leo risus</a>
 			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
 			  <a href="#" class="list-group-item">Vestibulum at eros</a>
