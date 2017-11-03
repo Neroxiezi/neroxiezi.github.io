@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="jumbotron" style="padding-left:50px;position: relative;">
-  <h1 style="float: left;width:100%;font-size:80px;">Hello, world!</h1>
+  <h1 style="float: left;width:100%;font-size:80px;text-align:center">Hello, world!</h1>
   <p style="float: left;">一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
 	<div style="clear: both;"></div>
 </div>
@@ -41,13 +41,14 @@ layout: default
 			     首页
 			  </a>
 			  <li class="list-group-item">
-				  <a href="##" class="am-icon-btn am-icon-github"></a>
+				  <a href="https://github.com/Neroxiezi" class="am-icon-btn am-icon-github"></a>
 				  <a href="##" class="am-icon-btn am-icon-twitter"></a>
 				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
 			  </li>
-			  <a href="#" class="list-group-item">Morbi leo risus</a>
-			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-			  <a href="#" class="list-group-item">Vestibulum at eros</a>
+			  <a href="#" class="list-group-item disabled">友情链接</a>
+			  <li class="list-group-item">
+			    {% include link.html %}
+			  </li>
 			</div>
 		  </div>
 		</div>
