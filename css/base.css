@@ -79,7 +79,7 @@ h1, h2, h3, h4 {
 #timeline .timeline-item .timeline-icon img {
     position: relative;
     top: 14px;
-    left: 14px;
+   /* left: 14px;*/
 }
 #timeline .timeline-item .timeline-content {
     width: 45%;
