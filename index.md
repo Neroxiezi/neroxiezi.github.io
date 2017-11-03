@@ -40,7 +40,7 @@
 			  <a href="#" class="list-group-item disabled">
 			     首页
 			  </a>
-			  <a class="list-group-item"><a href="##" class="am-icon-btn am-icon-github"></a> &nbsp;github</a>
+			  <a class="list-group-item"><span class="am-icon-btn am-icon-github"></span> &nbsp;github</a>
 			  <a href="#" class="list-group-item">Morbi leo risus</a>
 			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
 			  <a href="#" class="list-group-item">Vestibulum at eros</a>
