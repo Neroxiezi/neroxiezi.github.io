@@ -40,8 +40,13 @@ layout: default
 			  <a href="#" class="list-group-item disabled">
 			     首页
 			  </a>
-			  <a class="list-group-item"><span class="am-icon-btn am-icon-github"></span> &nbsp;github</a>
-			  <a href="#" class="list-group-item">Morbi leo risus</a>
+			  <li class="list-group-item">
+			    <a href="https://github.com/Neroxiezi" class="am-icon-btn am-icon-github"></a> 
+			    <a href="##" class="am-icon-btn  am-icon-qq"></a>
+			    <a href="##" class="am-icon-btn am-icon-twitter"></a>
+                <a href="##" class="am-icon-btn am-icon-facebook"></a>
+			  </li>
+			  <a href="#" class="list-group-item disabled">友情链接</a>
 			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
 			  <a href="#" class="list-group-item">Vestibulum at eros</a>
 			</div>
