@@ -6,7 +6,7 @@
 	<meta name="renderer" content="webkit">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="author" content="南丞">
-	<meta name="keywords" content="PHP,Linux,Mysql,PHP技术,南丞_,Q哥,博客, 个人博客 ">
+	<meta name="keywords" content="PHP,Linux,Mysql,PHP技术,南丞_,Q哥,博客, 个人博客,南丞嘚吧嘚">
 	<meta name="description" content="南丞_，南丞_的个人博客">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/favicon">
@@ -19,8 +19,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/scenery.css">
 	<script src="js/jquery.min.js"></script>
-	<script src="https://unpkg.com/vue"></script>
-	<title>{{ page.title }}</title>
+	<title>{% if page.title == "Home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 
 </head>
 <body>
