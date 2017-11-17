@@ -84,7 +84,7 @@ Publishing Complete!
 
 
  //如：
- > <textarea id='myEditor'></textarea>
+ > < textarea id='myEditor'>< /textarea>
 
 
 > 同时，在你的 textarea 的父级标签，加上 class = editor,如果你的 textarea 是被 div 包住的，那么你就这样写
