@@ -81,10 +81,11 @@ Publishing Complete!
 
 ```
 > 然后，比如我的 textarea 需要把他变成编辑器，这个时候，给你的 textarea 写上一个 id = myEditor
-```
+
+
  //如：
- <textarea id='myEditor'></textarea>
-```
+ > <textarea id='myEditor'></textarea>
+
 
 > 同时，在你的 textarea 的父级标签，加上 class = editor,如果你的 textarea 是被 div 包住的，那么你就这样写
 
