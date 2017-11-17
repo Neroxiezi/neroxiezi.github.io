@@ -41,7 +41,7 @@ layout: default
 			     首页
 			  </a>
 			  <li class="list-group-item">
-				  <a href="https://github.com/Neroxiezi" class="am-icon-btn am-icon-github"></a>
+				  <a href="https://github.com/Neroxiezi" target="_blank" class="am-icon-btn am-icon-github"></a>
 				  <a href="##" class="am-icon-btn am-icon-twitter"></a>
 				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
 			  </li>
