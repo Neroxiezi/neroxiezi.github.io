@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PHP Traits 的使用"
+title:  "Laravel 框架引入 markdown 编辑器"
 date:   2017-11-17 16:40:12 +0800
 author: "南丞"
 desc: "Laravel是一套简洁、优雅的PHP Web开发框架(PHP Web Framework)。它可以让你从面条一样杂乱的代码中解脱出来；它可以帮你构建一个完美的网络APP，而且每行代码都可以简洁、富于表达力。"
