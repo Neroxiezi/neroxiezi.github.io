@@ -81,7 +81,7 @@ Publishing Complete!
 
 ```
 > 然后，比如我的 textarea 需要把他变成编辑器，这个时候，给你的 textarea 写上一个 id = myEditor
-```html
+```
  //如：
  <textarea id='myEditor'></textarea>
 ```
