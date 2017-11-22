@@ -42,8 +42,7 @@ layout: default
 			  </a>
 			  <li class="list-group-item">
 				  <a href="https://github.com/Neroxiezi" target="_blank" class="am-icon-btn am-icon-github"></a>
-                   <a id="subscribe-link"class="am-icon-btn am-icon-rss" title="Subscribe" aria-label="Subscribe" href="./feed.xml">
-                    </a>
+                  <a id="subscribe-link" class="am-icon-btn am-icon-rss" title="Subscribe" aria-label="Subscribe" href="./feed.xml"></a>
 				  <a href="##" class="am-icon-btn am-icon-twitter"></a>
 				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
 			  </li>
