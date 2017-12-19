@@ -35,6 +35,10 @@
     animation: gitment-spin 1s steps(12) infinite;
 }
 
+.gitment-container {
+    text-align: left;
+}
+
 @-webkit-keyframes gitment-spin {
     100% {
         -webkit-transform: rotate(360deg);
@@ -144,6 +148,8 @@ a.gitment-header-issue-link:hover {
     border: 1px solid #CFD8DC;
     border-radius: 0;
 }
+
+.gitment-comment-main{text-align: left}
 
 .gitment-editor-main::before,
 .gitment-editor-main::after,
