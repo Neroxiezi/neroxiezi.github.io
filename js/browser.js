@@ -3039,7 +3039,7 @@ var Gitment =
 
             var shouldDisable = user.login && !error ? '' : 'disabled';
             var disabledTip = user.login ? '' : 'Login to Comment';
-            container.innerHTML = '\n      ' + (user.login ? '<a class="gitment-editor-avatar" href="' + user.html_url + '" target="_blank">\n            <img class="gitment-editor-avatar-img" src="' + user.avatar_url + '"/>\n          </a>' : user.isLoggingIn ? '<div class="gitment-editor-avatar">' + _icons.spinner + '</div>' : '<a class="gitment-editor-avatar" href="' + instance.loginLink + '" title="login with GitHub">\n              ' + _icons.github + '\n            </a>') + '\n    </a>\n    <div class="gitment-editor-main">\n      <div class="gitment-editor-header">\n        <nav class="gitment-editor-tabs">\n          <button class="gitment-editor-tab gitment-selected">写评论</button>\n          <button class="gitment-editor-tab">浏览</button>\n        </nav>\n        <div class="gitment-editor-login">\n          ' + (user.login ? '<a class="gitment-editor-logout-link">Logout</a>' : user.isLoggingIn ? 'Logging in...' : '<a class="gitment-editor-login-link" href="' + instance.loginLink + '">Login</a> with GitHub') + '\n        </div>\n      </div>\n      <div class="gitment-editor-body">\n        <div class="gitment-editor-write-field">\n          <textarea placeholder="Leave a comment" title="' + disabledTip + '" ' + shouldDisable + '></textarea>\n        </div>\n        <div class="gitment-editor-preview-field gitment-hidden">\n          <div class="gitment-editor-preview gitment-markdown"></div>\n        </div>\n      </div>\n    </div>\n    <div class="gitment-editor-footer">\n      <a class="gitment-editor-footer-tip" href="https://guides.github.com/features/mastering-markdown/" target="_blank">\n        支持Markdown语法\n      </a>\n      <button class="gitment-editor-submit" title="' + disabledTip + '" ' + shouldDisable + '>Comment</button>\n    </div>\n  ';
+            container.innerHTML = '\n      ' + (user.login ? '<a class="gitment-editor-avatar" href="' + user.html_url + '" target="_blank">\n            <img class="gitment-editor-avatar-img" src="' + user.avatar_url + '"/>\n          </a>' : user.isLoggingIn ? '<div class="gitment-editor-avatar">' + _icons.spinner + '</div>' : '<a class="gitment-editor-avatar" href="' + instance.loginLink + '" title="login with GitHub">\n              ' + _icons.github + '\n            </a>') + '\n    </a>\n    <div class="gitment-editor-main">\n      <div class="gitment-editor-header">\n        <nav class="gitment-editor-tabs">\n          <button class="gitment-editor-tab gitment-selected">写评论</button>\n          <button class="gitment-editor-tab">浏览</button>\n        </nav>\n        <div class="gitment-editor-login">\n          ' + (user.login ? '<a class="gitment-editor-logout-link">退出</a>' : user.isLoggingIn ? 'Logging in...' : '<a class="gitment-editor-login-link" href="' + instance.loginLink + '">登录</a> with GitHub') + '\n        </div>\n      </div>\n      <div class="gitment-editor-body">\n        <div class="gitment-editor-write-field">\n          <textarea placeholder="留下你的评论" title="' + disabledTip + '" ' + shouldDisable + '></textarea>\n        </div>\n        <div class="gitment-editor-preview-field gitment-hidden">\n          <div class="gitment-editor-preview gitment-markdown"></div>\n        </div>\n      </div>\n    </div>\n    <div class="gitment-editor-footer">\n      <a class="gitment-editor-footer-tip" href="https://guides.github.com/features/mastering-markdown/" target="_blank">\n        支持Markdown语法\n      </a>\n      <button class="gitment-editor-submit" title="' + disabledTip + '" ' + shouldDisable + '>Comment</button>\n    </div>\n  ';
             if (user.login) {
                 container.querySelector('.gitment-editor-logout-link').onclick = function () {
                     return instance.logout();
@@ -3083,11 +3083,11 @@ var Gitment =
                 var preview = previewField.querySelector('.gitment-editor-preview');
                 var content = textarea.value.trim();
                 if (!content) {
-                    preview.innerText = 'Nothing to preview';
+                    preview.innerText = '没有内容预览';
                     return;
                 }
 
-                preview.innerText = 'Loading preview...';
+                preview.innerText = '加载预览…';
                 instance.markdown(content).then(function (html) {
                     return preview.innerHTML = html;
                 });
@@ -3095,17 +3095,17 @@ var Gitment =
 
             var submitButton = container.querySelector('.gitment-editor-submit');
             submitButton.onclick = function () {
-                submitButton.innerText = 'Submitting...';
+                submitButton.innerText = '提交中…';
                 submitButton.setAttribute('disabled', true);
                 instance.post(textarea.value.trim()).then(function (data) {
                     textarea.value = '';
                     textarea.style.height = 'auto';
                     submitButton.removeAttribute('disabled');
-                    submitButton.innerText = 'Comment';
+                    submitButton.innerText = '提交评论';
                 }).catch(function (e) {
                     alert(e);
                     submitButton.removeAttribute('disabled');
-                    submitButton.innerText = 'Comment';
+                    submitButton.innerText = '提交评论';
                 });
             };
 
