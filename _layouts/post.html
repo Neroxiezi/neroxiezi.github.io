@@ -11,21 +11,30 @@ layout: default
 		<div class="panel-body" style="text-align: left">
 			{{ content }}
 		</div>
-		<div id="container"></div>
-		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-		<script>
-            var gitment = new Gitment({
-                id: '', // 可选。默认为 location.href
-                owner: '1370288056@qq.com',
-                repo: 'neroxiezi.github.io',
-                oauth: {
-                    client_id: 'c8dd0ab85e6a7b9748c8',
-                    client_secret: '44c667741e0885e24a17d7e51dc67e9f5de6f6cf',
-                },
-            })
-            gitment.render('container')
-		</script>
+		<div class="panel panel-default">
+			<div class="panel-heading" style="padding:15px;">
+				<h1 class="panel-title" style="">评论:</h1>
+			</div>
+			<div class="panel-body">
+				<div id="container"></div>
+				<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+				<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+				<script>
+                    var gitment = new Gitment({
+                        id: '', // 可选。默认为 location.href
+                        owner: '1370288056@qq.com',
+                        repo: 'neroxiezi.github.io',
+                        oauth: {
+                            client_id: 'c8dd0ab85e6a7b9748c8',
+                            client_secret: '44c667741e0885e24a17d7e51dc67e9f5de6f6cf',
+                        },
+                    })
+                    gitment.render('container')
+				</script>
+			</div>
+
+			</div>
+		</div>
 		<div class="panel-footer">技术之路,永无止境</div>
 	</div>
 </div>
