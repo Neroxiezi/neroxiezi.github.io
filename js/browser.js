@@ -2908,7 +2908,7 @@ var Gitment =
                             alert(e);
                         });
                     };
-                    initButton.innerText = 'Initialize Comments';
+                    initButton.innerText = '初始化';
                     initHint.appendChild(initButton);
                     errorBlock.appendChild(initHint);
                 } else {
