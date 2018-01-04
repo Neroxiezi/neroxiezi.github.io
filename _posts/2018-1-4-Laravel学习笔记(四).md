@@ -20,7 +20,7 @@ in_head: "<style> .article-content p{
 
 >  表1:  店铺表 store
 
-|字段|类型|描述|
+| 字段| 类型| 描述|
 |----|----|----|
 |store_id|int|主键|
 |store_name|varchar(255)|名称|
@@ -48,7 +48,7 @@ in_head: "<style> .article-content p{
 面对这样的需求 我们常规的做法是如下:
 
 
-```php 
+``` 
 <?php
 //首先从表单中传递过来一个数组:
 $param['store_name']='测试店铺';//这是接收的店铺名字
@@ -64,12 +64,13 @@ if(count($data['tag_ids'])>0) {
         $res[] = TagGroup::create(['store_id'=>$result->store_id,'tag_id'=>$value]); //绑定关系
     }
 }
-?>```
+?>
+```
 
 按照上面的代码写下来 估计在修改的店铺标签的时候 估计会炸掉! 因为首先要查 这个标签绑定过没 绑定了的 要删除 并把没有绑定过的再绑定上 多麻烦 所以 有需求就有解决方案! 如下所示我们使用 sync() 来做关系:
 
 
-```php
+```
 <?php
 //首先从表单中传递过来一个数组:
 $param['store_name']='测试店铺';//这是接收的店铺名字
@@ -88,14 +89,15 @@ $res = $result->tag->sync($data['tag_ids']);
 > 接下来我们需要在  Stroe model中 去定义一个关联模型
 
 
-```php
+```
 <?php
 class Store extend Model{
      public function tag() {
         return $this->belongsToMany(Tag::class,'tag_group','tag_id','store_id');
      }
     }
-?>```
+?>
+```
 
 > 这样 我们就可以 很方便的去给店铺 挂载标签 或者属性, sync() 为我们提供了 大部分的功能,比如在修改的时候他会自动去找,如果没有的去绑定或者删除...
 
