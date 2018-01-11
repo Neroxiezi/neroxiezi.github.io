@@ -2,64 +2,72 @@
 layout: default
 ---
 <style type="text/css">
-  .navbar-default{z-index: 50}
+    .navbar-default {
+        z-index: 50
+    }
 </style>
 <div class="bg bg-box-1"></div>
 <div class="bg bg-box-2"></div>
 <div class="bg bg-box-3"></div>
 <div class="bg bg-box-4"></div>
+<div class="bg bg-box-5"></div>
 <div id="wrap">
-  <ul>
-    <li>
-      <div class="text">
-        <p>尼尔机械纪元</p>
-      </div>
-    </li>
-    <li>
-      <div class="text">
-        <p>尼尔机械纪元2</p>
-      </div>
-    </li>
-    <li>
-      <div class="text">
-        <p>尼尔机械纪元3</p>
-      </div>
-    </li>
-    <li class="curr">
-      <div class="text">
-        <p>尼尔机械纪元4</p>
-      </div>
-    </li>
-  </ul>
+    <ul>
+        <li>
+            <div class="text">
+                <p>尼尔机械纪元</p>
+            </div>
+        </li>
+        <li>
+            <div class="text">
+                <p>尼尔机械纪元2</p>
+            </div>
+        </li>
+        <li>
+            <div class="text">
+                <p>尼尔机械纪元3</p>
+            </div>
+        </li>
+        <li class="curr">
+            <div class="text">
+                <p>尼尔机械纪元4</p>
+            </div>
+        </li>
+        <li class="curr">
+            <div class="text">
+                <p>尼尔机械纪元4</p>
+            </div>
+        </li>
+    </ul>
 </div>
-  <script>
-  (function(){
-    $('#wrap li').mouseover(function(){
-      if(!$(this).hasClass('curr')){
-        $('#wrap li').removeClass('curr');
-        $(this).addClass('curr');
+<script>
+    (function () {
+        $('#wrap li').mouseover(function () {
+            if (!$(this).hasClass('curr')) {
+                $('#wrap li').removeClass('curr');
+                $(this).addClass('curr');
 
-        // 切换背景
-        $('#wrap li').each(function(index){
-          if($(this).hasClass('curr')){
-            $('.bg').fadeOut(300);
-            $('.bg:eq(' + index + ')').fadeIn(500);
-          }
+                // 切换背景
+                $('#wrap li').each(function (index) {
+                    if ($(this).hasClass('curr')) {
+                        $('.bg').fadeOut(300);
+                        $('.bg:eq(' + index + ')').fadeIn(500);
+                    }
+                });
+
+                $('.curr').stop().animate({
+                    width: 700
+                }, 500, 'linear');
+                $('#wrap li').not('.curr').stop().animate({
+                    width: 100
+                }, 500, 'linear');
+            }
         });
-
-        $('.curr').stop().animate({
-          width: 700
-        }, 500, 'linear');
-        $('#wrap li').not('.curr').stop().animate({
-          width: 100
-        }, 500, 'linear');
-      }
-    });
-  })()
-  </script>
-<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
-  <a href="#top" title="回到顶部">
-      <span class="am-gotop-title">回到顶部</span>
+    })()
+</script>
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+    <a href="#top" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
         <i class="am-gotop-icon am-icon-chevron-up"></i>
-  </a>
+    </a>
 </div>
