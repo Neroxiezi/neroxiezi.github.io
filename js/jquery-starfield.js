@@ -165,7 +165,7 @@
 		}
 
 		var canvas = $('<canvas id="rocketwagon-canvas">')
-			.css({position: 'absolute', left: 0, top: 0, width: '100%', height: '100%'})
+			.css({position: 'absolute', left: 0, top: 0, width: '100%'})
 			.attr({width: $this.width(), height: $this.height()})
 			.prependTo($this);
 
