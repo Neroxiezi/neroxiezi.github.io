@@ -20,12 +20,20 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/scenery.css">
 	<script src="js/jquery.min.js"></script>
-	<script src="https://unpkg.com/vue"></script>
+	<!--<script src="https://unpkg.com/vue"></script>-->
 	<title>{% if page.title == "Home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+	<style>
+		canvas {
+			position:relative;
+			z-index:0;
+
+		}
+	</style>
 </head>
 <body>
-<div class="htmleaf-container">
+<canvas id="network" width="100%"></canvas>
+<!--<div class="htmleaf-container">-->
 <nav class="navbar navbar-default" style="margin: 0px;">
 	<div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
 		<i class="icon-bar"></i>
