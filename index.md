@@ -34,7 +34,7 @@ layout: default
 		</div>
 		<div class="col-md-4">
 		<div class="panel panel-default" style="text-align: left">
-		  <div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 分类列表</div>
+		  <div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 网站信息</div>
 		  <div class="panel-body">
 		    <div class="list-group">
 			  <a href="#" class="list-group-item disabled">
@@ -45,6 +45,10 @@ layout: default
                   <a id="subscribe-link" class="am-icon-btn am-icon-rss" title="Subscribe" aria-label="Subscribe" href="./feed.xml"></a>
 				  <a href="##" class="am-icon-btn am-icon-twitter"></a>
 				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
+			  </li>
+			  <a href="#" class="list-group-item disabled">网站访问量</a>
+			  <li class="list-group-item">
+			  <div align="center"><a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3219889&c=9659980" alt="AmazingCounters.com"></a></div>
 			  </li>
 			  <a href="#" class="list-group-item disabled">友情链接</a>
 			  <li class="list-group-item">
