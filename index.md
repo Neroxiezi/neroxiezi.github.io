@@ -47,7 +47,7 @@ layout: default
 				  <a href="##" class="am-icon-btn am-icon-facebook"></a>
 			  </li>
 			  <a href="#" class="list-group-item disabled">网站访问量</a>
-			  <li class="list-group-item">
+			  <li class="list-group-item" style="text-align:center">
 			  <div align="center"><a href="http://friday-go.cc/"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3219889&c=9659980" alt="AmazingCounters.com"></a></div>
 			  <span style="color:#008e59;font-size:12px;">本统计有AmaxingCounters提供</span>
 			  <!-- http://www.amazingcounters.com -->
