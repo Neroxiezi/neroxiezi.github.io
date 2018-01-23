@@ -18,7 +18,7 @@
 
             this.canvas = document.getElementById('network');
             this.ctx = this.canvas.getContext('2d');
-            this.canvas.height = window.outerHeight;
+            this.canvas.height = document.body.offsetHeight;
             this.canvas.width = window.innerWidth;
 
             this.aDots = [];
@@ -141,7 +141,7 @@
         Network.prototype.heartBeat = function() {
             var m=rand(10, 30);
             var randX = rand(0, window.innerWidth);
-            var randY = rand(0, window.innerHeight);
+            var randY = rand(0, document.body.offsetHeight);
 
             for (var i = 0; i < m; i++) {
 
@@ -192,7 +192,7 @@
 
             this.ctx.globalCompositeOperation = "source-over";
             this.ctx.fillStyle = "rgba( 1, 0, 0, 1 )";
-            this.ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+            this.ctx.fillRect(0, 0, window.innerWidth, document.body.offsetHeight);
 
             for (var i = this.aDots.length - 1; i >= 0; i--) {
 
@@ -252,7 +252,7 @@
         }
         Dot.prototype.isOut = function() {
 
-            return (this.x < 0 || this.x > window.innerWidth || this.y < 0 || this.y > window.innerHeight)
+            return (this.x < 0 || this.x > window.innerWidth || this.y < 0 || this.y > document.body.offsetHeight)
 
         }
         Dot.prototype.update = function() {
@@ -261,7 +261,7 @@
             if (this.x < 0 || this.x > window.innerWidth)
                 this.vx *= -.8;
 
-            if (this.y < 0 || this.y > window.innerHeight)
+            if (this.y < 0 || this.y > document.body.offsetHeight)
                 this.vy *= -.8;
 
             //stock last x/y
@@ -357,7 +357,7 @@
         };
         onresize = function() {
             oNetwork.canvas.width = window.innerWidth;
-            oNetwork.canvas.height = window.innerHeight;
+            oNetwork.canvas.height = document.body.offsetHeight;
             oNetwork.getGrd();
         };
 
