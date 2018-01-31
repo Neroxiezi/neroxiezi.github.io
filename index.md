@@ -52,6 +52,10 @@ layout: default
 			  <span style="color:#008e59;font-size:12px;">本统计有AmaxingCounters提供</span>
 			  <!-- http://www.amazingcounters.com -->
 			  </li>
+			   <a href="#" class="list-group-item disabled">QQ交流群:</a>
+			   <li class="list-group-item">
+			   <img src='./images/qqer.png'>
+			   </li>
 			  <a href="#" class="list-group-item disabled">友情链接</a>
 			  <li class="list-group-item">
 			    {% include link.html %}
