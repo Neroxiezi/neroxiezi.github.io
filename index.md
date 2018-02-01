@@ -54,7 +54,7 @@ layout: default
 			  </li>
 			   <a href="#" class="list-group-item disabled">QQ交流群:</a>
 			   <li class="list-group-item">
-			   <img src='./images/qqer.png'>
+			    <img src='./images/qqer.png'>
 			   </li>
 			  <a href="#" class="list-group-item disabled">友情链接</a>
 			  <li class="list-group-item">
