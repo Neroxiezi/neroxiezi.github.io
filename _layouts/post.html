@@ -20,9 +20,15 @@ layout: default
 				<div id="container"></div>
 				<script src="js/browser.js"></script>
 				<script>
+		    var page_date = '{{ page.date }}';
+			var id = window.location.href;
+			if(page_date > '2017-12-01 00:00:00 +0000'){
+			    id = page_date;
+			}
                     var gitment = new Gitment({
                         //id: '{{page.title}}', // 可选。默认为 location.href
-                        owner: 'neroxiezi',
+                        id: id,
+			owner: 'neroxiezi',
                         repo: 'neroxiezi.github.io',
                         oauth: {
                             client_id: 'c8dd0ab85e6a7b9748c8',
