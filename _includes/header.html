@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/scenery.css">
 	<script src="js/jquery.min.js"></script>
+	<script src="/css/highlight/highlight.pack.js"></script>
 	<!--<script src="https://unpkg.com/vue"></script>-->
 	<title>{% if page.title == "Home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
@@ -30,6 +31,7 @@
 
 		}
 	</style>
+	 <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <canvas id="c_n12" width="918" height="989" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
