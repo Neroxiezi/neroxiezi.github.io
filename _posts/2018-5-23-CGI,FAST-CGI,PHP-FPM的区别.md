@@ -16,7 +16,9 @@ in_head: "<style> .article-content p{
 
 **CGI** 全称Common Gateway Interface即公共网关接口，它遵循cgi规范，定义了与其他服务之间的通信协议，
 
-``PHP以CGI方式运行时，当一个请求向web server请求动态页时，web server总会fork一个CGI解释器进程进行处理这个请求，进程处理完成之后将结果返回给web server，web server将结果返回并显示出来，进程结束，当用户再次请求同一个页面时，web server总会fork一个进程进行处理，这样效率会比较低下（CGI被人诟病的主要原因）``
+``PHP以CGI方式运行时，当一个请求向web server请求动态页时，``
+``web server总会fork一个CGI解释器进程进行处理这个请求，进程处理完成之后将结果返回给web server，web server将结果返回并显示出来，进程结束，当用户再次请求同一个页面时，``
+``web server总会fork一个进程进行处理，这样效率会比较低下（CGI被人诟病的主要原因）``
 
 ### FAST-CGI
 
