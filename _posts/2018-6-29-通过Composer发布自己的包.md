@@ -209,3 +209,4 @@ class PFarr {
 
 #### OK 到此 Composer包发布完毕
 
+顺便放上我的包地址: [nancheng/pfinal-array](https://packagist.org/packages/nancheng/pfinal-array)
