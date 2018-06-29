@@ -198,10 +198,11 @@ class PFarr {
 
 第三步:
     
-    如下图所示:
-   ![](/images/m.png)
-   
-   ![](/images/n.png)
+如下图所示:
+
+![](/images/m.png)
+
+![](/images/n.png)
 
    点击submit（Check的使用会检查是否已经纯在这个目录了，如果存在的话，需要重新改一下composer.json文件中的name配置）
 
