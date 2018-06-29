@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PHP几个牛逼的函数"
-date:   2019-6-28- 10:00:02 +0800
+title:  "Composer发布自己的插件包"
+date:   2018-6-29 10:00:02 +0800
 author: "南丞"
 desc: "Composer发布自己的插件包"
 
