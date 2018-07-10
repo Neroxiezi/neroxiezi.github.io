@@ -56,10 +56,7 @@ layout: default
 			   <li class="list-group-item">
 			    <img src='./images/qqer.png'>
 			   </li>
-			  <a href="#" class="list-group-item disabled">友情链接</a>
-			  <li class="list-group-item">
 			    {% include link.html %}
-			  </li>
 			</div>
 		  </div>
 		</div>
