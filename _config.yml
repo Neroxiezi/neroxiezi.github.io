@@ -3,7 +3,7 @@ auto: true
 markdown: kramdown
 
 highlighter: 'rouge'
-permalink: /:title
+# permalink: /:title
 paginate: 5
 paginate_path: "page:num"
 # Setup
