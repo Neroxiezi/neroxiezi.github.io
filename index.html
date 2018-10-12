@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<div class="jumbotron" style="padding-left:50px;position: relative;background-color:#008e59;color:#fff">
+	<h1 style="float: left;width:100%;font-size:80px;text-align:left">Hello, world!</h1>
+	<p style="float: left;">一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
+	<div style="clear: both;"></div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default" style="text-align: left">
+				<div class="panel-heading"><span class="glyphicon glyphicon-zoom-in"></span> 文章列表</div>
+				<div class="panel-body">
+					<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+						<!--列表标题-->
+						<div class="am-list-news-bd">
+							<ul class="am-list">
+								{% for post in site.posts %}
+								<li class="am-g am-list-item-desced">
+									<a href="{{ post.url }}" class="am-list-item-hd ">
+										<h2>{{ post.title }}</h2>
+									</a>
+									<div class="am-list-item-text">
+										{{post.desc}}
+									</div>
+									<br>
+									<div style="font-size:14px;"><span class="glyphicon glyphicon-user"></span> {{post.author}} <span class="glyphicon glyphicon-time"></span>
+										{{post.date| date:"%Y-%m-%d %H:%M"}} </div>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					{% if paginator.total_pages > 1 %}
+					<div class="pagination">
+						{% if paginator.previous_page %}
+						<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+						{% else %}
+						<span>&laquo; Prev</span>
+						{% endif %}
+
+						{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+						<em>{{ page }}</em>
+						{% elsif page == 1 %}
+						<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+						{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
+							}}</a>
+						{% endif %}
+						{% endfor %}
+
+						{% if paginator.next_page %}
+						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+						{% else %}
+						<span>Next &raquo;</span>
+						{% endif %}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default" style="text-align: left">
+				<div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 网站信息</div>
+				<div class="panel-body">
+					<div class="list-group">
+						<a href="#" class="list-group-item disabled">
+							首页
+						</a>
+						<li class="list-group-item">
+							<a href="https://github.com/Neroxiezi" target="_blank" class="am-icon-btn am-icon-github"></a>
+							<a id="subscribe-link" class="am-icon-btn am-icon-rss" title="Subscribe" aria-label="Subscribe" href="./feed.xml"></a>
+							<a href="##" class="am-icon-btn am-icon-twitter"></a>
+							<a href="##" class="am-icon-btn am-icon-facebook"></a>
+						</li>
+						<a href="#" class="list-group-item disabled">网站访问量</a>
+						<li class="list-group-item" style="text-align:center">
+							<div align="center"><a href="http://friday-go.cc/"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3219889&c=9659980"
+									 alt="AmazingCounters.com"></a></div>
+							<span style="color:#008e59;font-size:12px;">本统计有AmaxingCounters提供</span>
+							<!-- http://www.amazingcounters.com -->
+						</li>
+						<a href="#" class="list-group-item disabled">QQ交流群:</a>
+						<li class="list-group-item">
+							<img src='./images/qqer.png'>
+						</li>
+						{% include link.html %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

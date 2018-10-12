@@ -3,9 +3,9 @@ auto: true
 markdown: kramdown
 
 highlighter: 'rouge'
-paginate: 10
 permalink: /:title
-
+paginate: 5
+paginate_path: "https://friday-go.cc/page:num"
 # Setup
 title:            "南丞嘚吧嘚"
 tagline:          "南丞的个人博客"
