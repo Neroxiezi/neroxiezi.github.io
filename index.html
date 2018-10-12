@@ -32,32 +32,38 @@ layout: default
 							</ul>
 						</div>
 					</div>
-					{% if paginator.total_pages > 1 %}
+					{% for post in paginator.posts %}
+					<article class="excerpt excerpt-c5">
+							<a class="thumbnail" href={{ post.url }}>
+									<img src="/assets/images/cover.jpg" class="thumb" style="display: inline;">
+							</a>
+							<h2>
+									<a href={{ post.url }}>{{ post.title | strip_html | strip_newlines | truncate: 250 }}&hellip;
+									</a>
+							</h2>
+							<footer>
+									<a href="javascript:;" class="post-like" data-pid="135" etap="like">
+											<i class="fa"></i><span>&chi;</span>
+									</a>
+									<time class="hot">Hot</time>
+									<span class="post-view">{{ post.date | date: "%F"}}</span>
+									<span class="post-comm">{{ post.tags }}</span>
+							</footer>
+					</article>
+					{% endfor %}
 					<div class="pagination">
 						{% if paginator.previous_page %}
-						<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+							<a href="{{ paginator.previous_page_path }}" class="previous" style="float:left;"><< Previous</a>
 						{% else %}
-						<span>&laquo; Prev</span>
+							<!-- <span class="previous">Previous</span> -->
 						{% endif %}
-
-						{% for page in (1..paginator.total_pages) %}
-						{% if page == paginator.page %}
-						<em>{{ page }}</em>
-						{% elsif page == 1 %}
-						<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-						{% else %}
-						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
-							}}</a>
-						{% endif %}
-						{% endfor %}
-
+							<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 						{% if paginator.next_page %}
-						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+							<a href="{{ paginator.next_page_path }}" class="next" style="float:right;margin-right:30px;">Next >></a>
 						{% else %}
-						<span>Next &raquo;</span>
+							<!-- <span class="next ">Next</span> -->
 						{% endif %}
 					</div>
-					{% endif %}
 				</div>
 			</div>
 		</div>
