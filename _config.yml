@@ -5,7 +5,7 @@ markdown: kramdown
 highlighter: 'rouge'
 # permalink: /:title
 paginate: 5
-paginate_path: "page:num"
+paginatepath: ['topics/study/page/:num','topics/life/page/:num']
 # Setup
 title:            "南丞嘚吧嘚"
 tagline:          "南丞的个人博客"
@@ -20,6 +20,8 @@ author_info: <a href="http://friday-go.cc/aboutme.html">南丞_</a>
 
 plugins:
   - jekyll-feed
+
+
 
 logo:             favicon.png
 lang:             zh-CN
