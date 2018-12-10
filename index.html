@@ -40,25 +40,25 @@ layout: default
 				<div class="panel-heading"><span class="glyphicon glyphicon-download"></span> 网站信息</div>
 				<div class="panel-body">
 					<div class="list-group">
-						<a href="#" class="list-group-item disabled">搜索</a>
-						<li class="list-group-item">
-							<form action="https://www.baidu.com/s" id="searchForm">
-								<input type="text" name="q" value="" required>
-								<input type="hidden" name="site" value="friday-go.cc">
-								<input type="submit" value="Search">
-							</form>
-							<script>
-                                var searchForm = document.getElementById('searchForm');
-                                searchForm.onsubmit = function(){
-                                    var url = this.action;
-                                    var q = this.children['q'].value;
-                                    var site = this.children['site'].value;
-                                    var url = url + '?wd='+q+' site:'+ site;
-                                    window.open(url);
-                                    return false;
-                                };
-							</script>
-						</li>
+						<!--<a href="#" class="list-group-item disabled">搜索</a>-->
+						<!--<li class="list-group-item">-->
+							<!--<form action="https://bing.com/search" id="searchForm">-->
+								<!--<input type="text" name="q" value="" required>-->
+								<!--<input type="hidden" name="site" value="friday-go.cc">-->
+								<!--<input type="submit" value="Search">-->
+							<!--</form>-->
+							<!--<script>-->
+                                <!--var searchForm = document.getElementById('searchForm');-->
+                                <!--searchForm.onsubmit = function(){-->
+                                    <!--var url = this.action;-->
+                                    <!--var q = this.children['q'].value;-->
+                                    <!--var site = this.children['site'].value;-->
+                                    <!--var url = url + '?q='+q+' site:'+ site;-->
+                                    <!--window.open(url);-->
+                                    <!--return false;-->
+                                <!--};-->
+							<!--</script>-->
+						<!--</li>-->
 						<a href="#" class="list-group-item disabled">
 							首页
 						</a>
