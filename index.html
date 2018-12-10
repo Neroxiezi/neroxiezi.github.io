@@ -42,9 +42,9 @@ layout: default
 					<div class="list-group">
 						<a href="#" class="list-group-item disabled">搜索</a>
 						<li class="list-group-item">
-							<form action="https://bing.com/search" id="searchForm">
+							<form action="https://www.baidu.com/s" id="searchForm">
 								<input type="text" name="q" value="" required>
-								<input type="hidden" name="site" value="www.ioio.pw">
+								<input type="hidden" name="site" value="friday-go.cc">
 								<input type="submit" value="Search">
 							</form>
 							<script>
@@ -53,7 +53,7 @@ layout: default
                                     var url = this.action;
                                     var q = this.children['q'].value;
                                     var site = this.children['site'].value;
-                                    var url = url + '?q='+q+' site:'+ site;
+                                    var url = url + '?wd='+q+' site:'+ site;
                                     window.open(url);
                                     return false;
                                 };
