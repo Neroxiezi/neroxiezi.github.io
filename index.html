@@ -42,10 +42,12 @@ layout: default
 					<div class="list-group">
 						<a href="#" class="list-group-item disabled">搜索</a>
 						<li class="list-group-item">
-							<form action="https://www.baidu.com/s" id="searchForm">
-								<input type="text" name="wd" value="" required>
-								<input type="hidden" name="site" value="(friday-go.cc)">
-								<input type="submit" class="" value="搜索">
+							<form action="https://www.baidu.com/s" id="searchForm" class="am-form">
+								<div class="am-form-group">
+									<input type="text" class="am-form-field am-radius" name="wd" value="" required>
+									<input type="hidden" name="site" value="(friday-go.cc)">
+									<input type="submit" class="am-btn am-btn-default" value="搜索">
+								</div>
 							</form>
 							<script>
                                 var searchForm = document.getElementById('searchForm');
@@ -58,7 +60,7 @@ layout: default
                                     return false;
                                 };
 							</script>
-						<!--</li>-->
+						</li>
 						<a href="#" class="list-group-item disabled">
 							首页
 						</a>
