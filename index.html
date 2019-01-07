@@ -46,7 +46,7 @@ layout: default
 								<div class="am-form-group am-form-icon">
 									<i class="am-icon-search"></i>
 									<input type="text" class="am-form-field am-radius" id="search_content" name="wd" value="" required>
-									<input type="hidden" name="site" value="(friday-go.cc)">
+									<input type="hidden" name="site" id="search_site" value="(friday-go.cc)">
 								</div>
 								<!-- <div class="am-form-group">
 									<input type="submit" class="am-btn am-btn-default" value="搜索">
@@ -54,14 +54,15 @@ layout: default
 							</form>
 							<script>
 								var search_content = document.getElementById('search_content');
+								var search_site = document.getElementById('search_site');
 								var searchForm = document.getElementById('searchForm');
 								search_content.onblur = function () {
 									searchForm.onsubmit();
 								}
 								searchForm.onsubmit = function () {
 									var url = searchForm.action;
-									var q = searchForm.children['wd'].value;
-									var site = searchForm.children['site'].value;
+									var q = search_content.value;
+									var site = search_site.value;
 									var url = url + '?wd=' + q + ' site:' + site;
 									window.open(url);
 									return false;
