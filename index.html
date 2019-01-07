@@ -45,15 +45,19 @@ layout: default
 							<form action="https://www.baidu.com/s" id="searchForm" class="am-form am-form-inline" role="form">
 								<div class="am-form-group am-form-icon">
 									<i class="am-icon-search"></i>
-									<input type="text" class="am-form-field am-radius" name="wd" value="" required>
+									<input type="text" class="am-form-field am-radius" id="search_content" name="wd" value="" required>
 									<input type="hidden" name="site" value="(friday-go.cc)">
 								</div>
-								<div class="am-form-group">
+								<!-- <div class="am-form-group">
 									<input type="submit" class="am-btn am-btn-default" value="搜索">
-								</div>
+								</div> -->
 							</form>
 							<script>
+								var search_content = document.getElementById('search_content');
 								var searchForm = document.getElementById('searchForm');
+								search_content.onblur = function () {
+									searchForm.onsubmit();
+								}
 								searchForm.onsubmit = function () {
 									var url = this.action;
 									var q = this.children['wd'].value;
