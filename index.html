@@ -42,7 +42,24 @@ layout: default
 					<div class="list-group">
 						<a href="#" class="list-group-item disabled">搜索</a>
 						<li class="list-group-item">
-							<form action="https://www.baidu.com/s" id="searchForm" class="am-form-inline">
+							<form class="am-form-inline" role="form">
+								<div class="am-form-group">
+									<input type="email" class="am-form-field" placeholder="电子邮件">
+								</div>
+
+								<div class="am-form-group">
+									<input type="password" class="am-form-field" placeholder="密码">
+								</div>
+
+								<div class="am-checkbox">
+									<label>
+										<input type="checkbox"> 记住我
+									</label>
+								</div>
+
+								<button type="submit" class="am-btn am-btn-default">登录</button>
+							</form>
+							<form action="https://www.baidu.com/s" id="searchForm" class="am-form-inline" role="form">
 								<div class="am-form-group">
 									<input type="text" class="am-form-field am-radius" name="wd" value="" required>
 									<input type="hidden" name="site" value="(friday-go.cc)">
@@ -52,15 +69,15 @@ layout: default
 								</div>
 							</form>
 							<script>
-                                var searchForm = document.getElementById('searchForm');
-                                searchForm.onsubmit = function(){
-                                    var url = this.action;
-                                    var q = this.children['wd'].value;
-                                    var site = this.children['site'].value;
-                                    var url = url + '?wd='+q+' site:'+ site;
-                                    window.open(url);
-                                    return false;
-                                };
+								var searchForm = document.getElementById('searchForm');
+								searchForm.onsubmit = function () {
+									var url = this.action;
+									var q = this.children['wd'].value;
+									var site = this.children['site'].value;
+									var url = url + '?wd=' + q + ' site:' + site;
+									window.open(url);
+									return false;
+								};
 							</script>
 						</li>
 						<a href="#" class="list-group-item disabled">
