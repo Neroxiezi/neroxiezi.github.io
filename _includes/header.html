@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,41 +23,51 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="/css/highlight/highlight.pack.js"></script>
 	<!--<script src="https://unpkg.com/vue"></script>-->
-	<title>{% if page.title == "Home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+	<title>{% if page.title == "Home" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }} | {{ site.title
+		}}{% endif %}</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 	<style>
 		canvas {
-			position:absolute;
-			z-index:0;
+			position: absolute;
+			z-index: 0;
 
 		}
 	</style>
 	<script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?0f5519049f3b65fb636772c3374e15b3";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?0f5519049f3b65fb636772c3374e15b3";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script>
+		(function () {
+			var src = (document.location.protocol == "http:") ?
+				"http://js.passport.qihucdn.com/11.0.1.js?1f5db7559cde1d9080cd3c238ff64fc7" :
+				"https://jspassport.ssl.qhimg.com/11.0.1.js?1f5db7559cde1d9080cd3c238ff64fc7";
+			document.write('<script src="' + src + '" id="sozz"><\/script>');
+		})();
 	</script>
 </head>
+
 <body>
-<canvas id="c_n12" width="918" height="989" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
-<!--<div class="htmleaf-container">-->
-<nav class="navbar navbar-default" style="margin: 0px;">
-	<div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-		<i class="icon-bar"></i>
-		<i class="icon-bar"></i>
-		<i class="icon-bar"></i>
-	</button><a href="/" class="navbar-brand"><img src="/favicon.ico"  height="100%" alt=""></a></div>
-	<div id="navbar1" class="navbar-collapse collapse">
-		<ul class="nav navbar-nav">
-			<li><a href="/">首页</a></li>
-			<li><a href="/technology.html">胡言乱语</a></li>
-			<li><a href="/book.html">书籍</a></li> 
-			<li><a href="/aboutme.html">关于我</a></li>
-			<li><a href="/sponsorship.html">赞助作者</a></li>
-		</ul>
-	</div>
-</nav>
+	<canvas id="c_n12" width="918" height="989" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+	<!--<div class="htmleaf-container">-->
+	<nav class="navbar navbar-default" style="margin: 0px;">
+		<div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+				<i class="icon-bar"></i>
+				<i class="icon-bar"></i>
+				<i class="icon-bar"></i>
+			</button><a href="/" class="navbar-brand"><img src="/favicon.ico" height="100%" alt=""></a></div>
+		<div id="navbar1" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/">首页</a></li>
+				<li><a href="/technology.html">胡言乱语</a></li>
+				<li><a href="/book.html">书籍</a></li>
+				<li><a href="/aboutme.html">关于我</a></li>
+				<li><a href="/sponsorship.html">赞助作者</a></li>
+			</ul>
+		</div>
+	</nav>
