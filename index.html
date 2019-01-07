@@ -59,9 +59,9 @@ layout: default
 									searchForm.onsubmit();
 								}
 								searchForm.onsubmit = function () {
-									var url = this.action;
-									var q = this.children['wd'].value;
-									var site = this.children['site'].value;
+									var url = searchForm.action;
+									var q = searchForm.children['wd'].value;
+									var site = searchForm.children['site'].value;
 									var url = url + '?wd=' + q + ' site:' + site;
 									window.open(url);
 									return false;
